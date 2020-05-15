@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 // import StateInAction from "./StateInAction";
+import SimpleEvents from "./SimpleEvents";
 
 function App() {
   return (
     <div className="App">
-      <h1>Sanity Check!</h1>
+      <SimpleEvents />
     </div>
   );
 }
