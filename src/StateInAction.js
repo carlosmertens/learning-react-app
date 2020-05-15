@@ -4,7 +4,7 @@ class StateInAction extends Component {
   constructor() {
     super();
     this.state = { text: "State inAction!" };
-    // Only for testing
+    // Only for testing, this will be considered a bug by React
     setTimeout(() => {
       this.setState({ text: "Change state for Sanity Check!" });
     }, 2000);
