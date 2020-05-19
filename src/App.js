@@ -4,6 +4,8 @@ import SimpleEvents from "./SimpleEvents";
 import EventAndState from "./EventAndState";
 import StateInAction from "./StateInAction";
 import StatePractice from "./StatePractice";
+import CardSet from "./CardSet";
+import cards from "./cards";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
       <EventAndState />
       <StateInAction />
       <StatePractice />
+      <div className="row">
+        <CardSet cards={cards} />
+      </div>
     </div>
   );
 }
