@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
-// import StateInAction from "./StateInAction";
-// import SimpleEvents from "./SimpleEvents";
-//import EventAndState from "./EventAndState";
+import SimpleEvents from "./SimpleEvents";
+import EventAndState from "./EventAndState";
+import StateInAction from "./StateInAction";
 import StatePractice from "./StatePractice";
 
 function App() {
   return (
     <div className="App">
+      <SimpleEvents />
+      <EventAndState />
+      <StateInAction />
       <StatePractice />
     </div>
   );

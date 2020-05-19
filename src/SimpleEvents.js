@@ -22,12 +22,14 @@ class SimpleEvents extends Component {
   render() {
     return (
       <div>
+        <h3>1. SimpleEvents Component</h3>
         <form onSubmit={this.handleSubmit}>
           <button className="btn" onClick={this.handleClick}>
             Click Me!
           </button>
           <input onChange={this.handleChange} />
         </form>
+        <hr />
       </div>
     );
   }

@@ -24,13 +24,15 @@ class EventAndState extends Component {
   render() {
     return (
       <div>
-        <h1>{this.state.inputText}</h1>
+        <h3>2. EventAndState Component</h3>
+        <p>{this.state.inputText}</p>
         <form onSubmit={this.handleSubmit}>
           <button className="btn" onClick={this.handleClick}>
             Click Me!
           </button>
           <input onChange={this.handleChange} />
         </form>
+        <hr />
       </div>
     );
   }

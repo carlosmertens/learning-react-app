@@ -11,7 +11,13 @@ class StateInAction extends Component {
   }
 
   render() {
-    return <h1>{this.state.text}</h1>;
+    return (
+      <div>
+        <h3>3. StateInAction Component</h3>
+        <h1>{this.state.text}</h1>
+        <hr />
+      </div>
+    );
   }
 }
 

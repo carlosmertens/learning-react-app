@@ -26,6 +26,7 @@ class StatePractice extends Component {
   render() {
     return (
       <div>
+        <h3>4. StatePractice Component</h3>
         <input onFocus={this.handleOnFocus} type="text" />
         <h3 onMouseEnter={this.handleOnMouse}>{this.state.message}</h3>
 
@@ -36,6 +37,7 @@ class StatePractice extends Component {
             alt=""
           />
         </div>
+        <hr />
       </div>
     );
   }
