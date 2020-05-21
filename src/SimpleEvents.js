@@ -23,12 +23,20 @@ class SimpleEvents extends Component {
     return (
       <div>
         <h3>1. SimpleEvents Component</h3>
-        <form onSubmit={this.handleSubmit}>
-          <button className="btn" onClick={this.handleClick}>
-            Click Me!
-          </button>
-          <input onChange={this.handleChange} />
-        </form>
+        <div className="row">
+          <form className="input-field col s6" onSubmit={this.handleSubmit}>
+            <div className="input-field col s6">
+              <input
+                type="text"
+                data-length="10"
+                onChange={this.handleChange}
+              />
+              <button className="btn" onClick={this.handleClick}>
+                Click Me!
+              </button>
+            </div>
+          </form>
+        </div>
         <hr />
       </div>
     );

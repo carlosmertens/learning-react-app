@@ -9,7 +9,7 @@ class CardSet extends Component {
   }
 
   saveCourse = (index) => {
-    console.log(index);
+    // console.log(index);
     // BAD!!! this.state.chosenCards.push(this.props.cards[index])
     const copyOfCards = [...this.state.chosenCards];
     copyOfCards.push(this.props.cards[index]);
@@ -18,7 +18,7 @@ class CardSet extends Component {
   };
 
   render() {
-    console.log(this.state.chosenCards);
+    // console.log(this.state.chosenCards);
 
     const saveCards = this.state.chosenCards.map((card, i) => {
       return <p key={i}>{card.course}</p>;

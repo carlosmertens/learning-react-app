@@ -17,7 +17,7 @@ class EventAndState extends Component {
   };
 
   handleSubmit = (event) => {
-    this.setState({ inputText: "We handled submit" });
+    this.setState({ inputText: "Your feedback has been submitted!" });
     event.preventDefault();
   };
 
@@ -25,13 +25,15 @@ class EventAndState extends Component {
     return (
       <div>
         <h3>2. EventAndState Component</h3>
-        <p>{this.state.inputText}</p>
-        <form onSubmit={this.handleSubmit}>
-          <button className="btn" onClick={this.handleClick}>
-            Click Me!
-          </button>
-          <input onChange={this.handleChange} />
-        </form>
+        <div className="row">
+          <p>{this.state.inputText}</p>
+          <form className="input-field col s6" onSubmit={this.handleSubmit}>
+            <input type="text" data-length="10" onChange={this.handleChange} />
+            <button className="btn" onClick={this.handleClick}>
+              Submit!
+            </button>
+          </form>
+        </div>
         <hr />
       </div>
     );

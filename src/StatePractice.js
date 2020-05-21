@@ -17,9 +17,9 @@ class StatePractice extends Component {
   };
 
   handleSize = (event) => {
-    console.dir(event.target);
+    // console.dir(event.target);
     if (event.target.width > 100) {
-      console.log("Your image is too big!");
+      // console.log("Your image is too big!");
     }
   };
 
@@ -27,8 +27,18 @@ class StatePractice extends Component {
     return (
       <div>
         <h3>4. StatePractice Component</h3>
-        <input onFocus={this.handleOnFocus} type="text" />
-        <h3 onMouseEnter={this.handleOnMouse}>{this.state.message}</h3>
+        <div className="row">
+          <form className="input-field col s6">
+            <input onFocus={this.handleOnFocus} type="text" data-length="10" />
+            <span
+              className="helper-text"
+              data-error="wrong"
+              data-success="right">
+              Enter your text
+            </span>
+            <h3 onMouseEnter={this.handleOnMouse}>{this.state.message}</h3>
+          </form>
+        </div>
 
         <div>
           <img
